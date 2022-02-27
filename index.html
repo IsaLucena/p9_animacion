@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style type="text/css">
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .caixa2{
+            width: 500px;
+            height: 500px;
+            background-color: salmon;
+            animation-name: transparencia;
+            animation-duration: 1s;
+            opacity:1;
+            position: relative;
+
+        }
+        header{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: red;
+            top: 50px;
+            left:50px;
+            z-index:-5;
+            
+        }
+        header:hover{
+            opacity: 0;
+        }
+        h2{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .caixa2 img:hover{
+            animation name: transparencia;
+            animation duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes transparencia{
+            from{
+                opacity: 1;
+                filter: grayscale(100%);
+            }
+            to{
+                opacity: 0;
+            }
+        
+        }
+       /* .caixa{
+            background-color: green;
+            position: absolute;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            animation-name: canvicolor;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes canvicolor{
+            0%{ background-color: green;
+            top: 0;}
+            40%{ background-color: orange;
+            top: 100px;}
+            80%{ background-color: red;
+            top: 100px;}
+        }*/
+    </style>
+</head>
+<body>
+    <div class="caixa2">
+        <header>
+            <h2>bn</h2>
+        </header>
+        <img src="img/img103.png" alt="">
+        
+    </div>
+</body>
+</html>
